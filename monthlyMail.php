@@ -1,12 +1,8 @@
 <?php
 require 'dbConnection.php';
-require 'vendor/autoload.php';
-
-
-
+require_once 'dompdf/autoload.inc.php';
 require 'PHPMailer-master/src/Exception.php';
 require 'PHPMailer-master/src/PHPMailer.php';
-require 'PHPMailer-master/src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -40,7 +36,7 @@ $pdfPath = '/path/to/save/monthly_calendar.pdf';
 file_put_contents($pdfPath, $pdfOutput);
 
 // Mailpit SMTP Einstellungen
-$mail = new PHPMailer\PHPMailer\PHPMailer();
+$mail = new PHPMailer();
 $mail->isSMTP();
 $mail->Host = 'localhost';
 $mail->Port = 1025;
