@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bindParam(':category', $category);
     $stmt->bindParam(':color', $color);
     $stmt->bindParam(':participants', $participants);
-
+    // test commit
     if ($stmt->execute()) {
         header("Location: index.php?month=" . date('m', strtotime($event_date)) . "&year=" . date('Y', strtotime($event_date)));
         exit();
