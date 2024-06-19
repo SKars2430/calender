@@ -2,6 +2,15 @@
 require 'dbConnection.php';
 require 'vendor/autoload.php';
 
+
+
+require 'PHPMailer-master/src/Exception.php';
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
 use Dompdf\Dompdf;
 
 $month = date('m');
