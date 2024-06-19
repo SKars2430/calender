@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.calendar-container, .event-management-container, .event-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.calendar-header, .event-management-container h2, .event-form-container h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.calendar-header button, .event-management-container button, .event-form-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.calendar-header button:hover, .event-management-container button:hover, .event-form-container button:hover {
+    background-color: #0056b3;
+}
+
+.calendar-body {
+    padding: 20px;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.calendar-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.calendar-table a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    position: relative;
+}
+
+.calendar-table td div {
+    margin-top: 5px;
+}
+
+.event {
+    background-color: #007bff;
+    color: #fff;
+    padding: 2px 4px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-top: 2px;
+    word-wrap: break-word;
+}
+
+.event-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.event-item h3 {
+    margin-top: 0;
+}
+
+.event-item button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.event-item button:hover {
+    background-color: #0056b3;
+}
+
+.event-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-form-container form label {
+    margin-top: 10px;
+}
+
+.event-form-container form input,
+.event-form-container form textarea,
+.event-form-container form select,
+.event-form-container form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.event-form-container form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.event-form-container form button:hover {
+    background-color: #0056b3;
+}
+
+.event-feed {
+    margin-top: 20px;
+}
+
+.event-feed h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.event-feed ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.event-feed li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.event-feed li span {
+    margin-right: 10px;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid blue; /* Specify border style */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    display: inline-block; /* Set display property */
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+  }
+  
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+    justify-content: space-around;
+    margin-top: 5px;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
