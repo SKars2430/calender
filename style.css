@@ -4,6 +4,91 @@ body {
     padding: 20px;
 }
 
+form {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+form input[type=text],
+form input[type=password],
+form input[type=email],
+form input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+form input[type=submit] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input[type=submit]:hover {
+    background-color: #0056b3;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-form, .register-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2, .register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Container for form sections */
+.container {
+    padding: 20px;
+    background-color: #f1f1f1;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+/* Existing Styles */
 .calendar-container, .event-management-container, .event-form-container {
     max-width: 800px;
     margin: 0 auto;
@@ -160,49 +245,15 @@ body {
 .download-button {
     background-color: #007bff;
     color: #fff;
-    border: 1px solid blue; /* Specify border style */
+    border: 1px solid blue;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     margin-right: 5px;
-    display: inline-block; /* Set display property */
+    display: inline-block;
 }
 
 .download-button:hover {
     background-color: #0056b3;
 }
 
-form {
-    border: 3px solid #f1f1f1;
-    font-family: Arial;
-  }
-  
-  .container {
-    padding: 20px;
-    background-color: #f1f1f1;
-    justify-content: space-around;
-    margin-top: 5px;
-  }
-  
-  input[type=text], input[type=submit] {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
-  input[type=checkbox] {
-    margin-top: 16px;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-}
