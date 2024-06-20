@@ -1,6 +1,15 @@
 <?php
+session_start();
+
+// Überprüfen, ob der Benutzer eingeloggt ist
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: register.php");
+    exit;
+}
+
 // Include Datenbankverbindung
 include 'dbConnection.php';
+
 
 // Überprüfen, ob Monat und Jahr als GET-Parameter übergeben wurden, andernfalls aktuelle Werte setzen
 $month = isset($_GET['month']) ? $_GET['month'] : date('m');
